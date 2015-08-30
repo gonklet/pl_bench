@@ -1,14 +1,11 @@
-PL Test Cases:
-==============
+#PL Test Cases:
 
-Arithmatic:
------------
+## Arithmatic:
 
 ### Basic Arithmetic
-
-Addition, Subtraction, Multiplication, Division, Exponents, and Modulo.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Addition, Subtraction, Multiplication, Division, Exponents, and Modulo.
+ 
+```javascript
 var r;
 r = 1+1; // 2
 console.log(r);
@@ -22,4 +19,6 @@ r = Math.pow(6,2);
 console.log(r); // 36
 r = 6 % 2;
 console.log(r);
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+```
+https://repl.it/BE2
