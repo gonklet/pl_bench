@@ -28,7 +28,6 @@ https://repl.it/BE2
 * Bit-Wise Definitions
 * Bit-Fields
 
-
 ```c
 #include "stdio.h"
 
@@ -64,3 +63,31 @@ int main(void) {
 }
 ```
 https://repl.it/BE4o
+
+### Casting Arithmetic
+```c
+#include "stdio.h"
+
+int main(void) {
+    // Disable stdout buffering
+    setvbuf(stdout, NULL, _IONBF, 0);
+
+    int a = 13;
+    int b = 15;
+    
+    printf("%d\n", a/b); // 0
+    printf("%f\n", a/b); // 0.000000
+    printf("%f\n", (double)(a/b)); // 0.000000
+    
+    printf("%f\n", (double)a/b); // 0.866667
+    printf("%f\n", a/(double)b); // 0.866667
+
+    double c = 7;
+    printf("%f\n", a/c); // 1.857143
+    
+    printf("%f\n", a/(c + b)); // 0.590909
+    
+    return 0;
+}
+```
+https://repl.it/BE4w
