@@ -91,3 +91,34 @@ int main(void) {
 }
 ```
 https://repl.it/BE4w
+
+## Object Oriented Programming
+
+### Classes
+```c++
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+class Jeep {
+private:
+    int gas_tank;
+public:
+    Jeep(int gas) : gas_tank(gas) {
+    }
+    
+    int totalTravelDistance() {
+        return 10 * gas_tank;
+    }
+    
+};
+
+int main() {
+    Jeep jeep = Jeep(10);
+    int distance = jeep.totalTravelDistance();
+    cout << "This Jeep can travel for " << distance << " miles." << endl;
+}
+
+
+```
+https://repl.it/BE8R
