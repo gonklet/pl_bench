@@ -315,6 +315,47 @@ int main() {
 ```
 
 ### Interfaces
+```java
+interface Greetable {
+    public String greetings();
+}
+
+class AnnouncementSpeaker{
+    private String companyName;
+    
+    public AnnouncementSpeaker(String companyName) {
+        this.companyName = companyName;
+        
+    }
+    
+    public void announce() {
+        // Some Code...
+    }
+    
+    public String greetings() {
+        return "Welcome to " + companyName;
+    }    
+    
+}
+
+class RoboWaiter {
+    public String greetings() {
+        return "Nice to meet you, I am RoboWaiter." + System.lineSeparator() + "What would you like to orders?";
+    }
+}
+
+class Main {
+  public static void main(String[] args) {
+    AnnouncementSpeaker announcementSpeaker = new AnnouncementSpeaker("PL_TEST");
+    System.out.println(announcementSpeaker.greetings());
+    
+    RoboWaiter roboWaiter = new RoboWaiter();
+    System.out.println(roboWaiter.greetings());
+  }
+}
+```
+
+### Friends
 ```c++
 interface Greetable {
     public String greetings();
@@ -353,6 +394,24 @@ class Main {
     System.out.println(roboWaiter.greetings());
   }
 }
+```
+
+## Functional Programming
+
+### Recurssion
+```javascript
+/*
+* Assumes that the sequence starts with index 0.
+*/
+function fibonacci(index) {
+    
+    if (index <= 1) return index;
+    
+    return fibonacci(index - 1) + fibonacci(index - 2);
+}
+
+fibonacci(8);
+
 ```
 
 
